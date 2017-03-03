@@ -1,0 +1,319 @@
+.h2 {
+  color: #000330;
+  font-family: Arial;
+  font-size: 16pt;
+  font-weight: bold; 
+}
+
+a.player_ref {
+  color: black;
+  font-weight: normal; 
+}
+
+a.player_ref_bold {
+  color: black;
+  font-weight: bold; 
+}
+
+a {
+  color: #009966;
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+a:hover {
+  color: #0066CC;
+  text-decoration: underline;
+}
+
+a.menuRed {
+	color: #BB0000;
+}
+
+body {
+  background-color: #FFFFE0; 
+}
+
+pre {
+  color: #000330;
+  font-size: 11pt; 
+}
+
+pre.conq {
+  color: #000330;
+  font-size: 11pt;
+  font-weight: normal; 
+}
+
+img {
+  border-color: #009966; 
+}
+
+img:hover {
+  border-color: #0066CC; 
+}
+
+.normal_text {
+  color: #000330;
+  font-family: Arial;
+  font-size: 11pt; 
+}
+
+.h3 {
+  color: #000330;
+  font-family: Arial;
+  font-size: 12pt;
+  font-weight: bold; 
+}
+
+.normal_text_plain {
+  color: #000330;
+  font-family: Arial;
+  font-size: 11pt; 
+}
+
+.error_msg {
+  color: #FF0000;
+  font-family: Arial;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold; 
+}
+
+
+td.gamecomment {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.note {
+  color: #FF0000; 
+}
+
+.w_map_text {
+  color: #FFFFFF; 
+}
+
+.b_map_text {
+  color: #000000; 
+}
+
+.bl_map_text {
+  color: #0000FF;
+  font-size: 8pt; 
+}
+
+.bl_bldg_text {
+  color: #0000FF;
+  font-size: 10pt; 
+}
+
+.wh_bldg_text {
+  color: #FFFFFF;
+  font-size: 8pt; 
+}
+
+.rev_map_text {
+  color: #000000;
+  font-size: 12pt; 
+}
+
+.small_text {
+  color: #000330;
+  font-family: Arial;
+  font-size: 7pt;
+  font-style: normal; 
+}
+
+.small_text_8 {
+  color: #000330;
+  font-family: Arial;
+  font-size: 8pt;
+  font-style: normal; 
+}
+
+.small_pre {
+  color: #000330;
+  font-family: Monaco, Courier;
+  font-size: 7pt;
+  font-style: normal; 
+}
+
+.small_text_9 {
+  color: #000330;
+  font-family: Arial;
+  font-size: 9pt;
+  font-style: normal; 
+}
+
+.small_text_11 {
+  color: #000330;
+  font-family: Arial;
+  font-size: 9pt;
+  font-weight: normal; 
+}
+
+.blue_text_plain {
+  color: #0066CC; 
+}
+
+.yellow_text_plain {
+  color: #FFFFE0; 
+}
+
+.yellow_text_bold {
+  color: #FFFFE0;
+  font-weight: bold; 
+}
+
+.small_yellow_text {
+  color: #FFFFE0;
+  font-size: 9pt; 
+}
+
+input.checkbox {
+  border-color: #FFFFE0;
+  background-color : #FFFFE0;
+  color : #FFFFE0;
+  font-size: 9pt;
+  font-family: Arial; 
+}
+
+input.upload {
+  border-style: solid;
+  border-width: thin;
+  border-color: #000000;
+  background-color : #0066CC;
+  color : #FFFFE0;
+  font-size: 9pt;
+  font-family: Arial; 
+}
+
+textarea {
+  border-style: solid;
+  border-width: thin;
+  border-color: #000000;
+  background-color : #0066CC;
+  color : #FFFFE0;
+  font-size: 9pt;
+  font-family: Arial; 
+}
+
+textarea.conq {
+  border-style: solid;
+  border-width: thin;
+  border-color: #000000;
+  background-color : #0066CC;
+  color : #FFFFE0;
+  font-size: 6pt;
+  font-family: Courier, Arial; 
+}
+
+input {
+  border-style: solid;
+  border-width: thin;
+  border-color: #000000;
+  background-color : #0066CC;
+  color : #FFFFE0;
+  font-size: 9pt;
+  font-family: Arial; 
+}
+
+select {
+  border-style: solid;
+  border-width: thin;
+  border-color: #000000;
+  background-color : #0066CC;
+  color : #FFFFE0;
+  font-size: 9pt;
+  font-family: Arial; 
+}
+
+td {
+  color: #000330;
+  font-family: Arial;
+  font-size: 10pt; 
+}
+
+td.menu {
+  border-style: solid;
+  border-width: thin;
+  border-color: #000000;
+  background-color: #DDDDDD;
+  color: #000330;
+  font-family: Arial;
+  font-size: 8pt; 
+}
+
+td.tblhdr {
+  border: 2px solid #0066CC;
+  color: #000330;
+  font-family: Arial;
+  font-size: 10pt;
+  font-weight: bold; 
+}
+
+td.tblbdy {
+  border: 2px solid #0066CC;
+  color: #000330;
+  font-family: Arial;
+  font-size: 10pt; 
+}
+
+td.top {
+  border-top: 1px solid #0066CC;
+  color: #000330;
+  font-family: Arial;
+  font-size: 10pt; 
+}
+
+td.thin {
+  border: 1px solid #0066CC;
+  color: #000330;
+  font-family: Arial;
+  font-size: 10pt; 
+}
+
+td.borderred {
+  border: 1px solid #FF3333; 
+}
+
+td.thick {
+  border: 2px solid #0066CC;
+  color: #000330;
+  font-family: Arial;
+  font-size: 10pt; 
+}
+
+td.thickred {
+  border: 2px solid #FF3333;
+  color: #FF3333;
+  font-family: Arial;
+  font-size: 10pt; 
+}
+
+td.border {
+  border: 1px solid #0066CC; 
+}
+
+input.mainoption {
+  font-weight : bold; 
+}
+
+.compact td {
+  color: #000330;
+  font-family: Arial;
+  font-size: 8pt;
+  font-style: normal;
+  border-bottom: solid 1px #0066CC;
+}
+
+.thin > td {
+  border: 1px solid #0066CC;
+  color: #000330;
+  font-family: Arial;
+  font-size: 10pt; 
+}
+
