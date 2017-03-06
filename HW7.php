@@ -6,7 +6,7 @@
 	
 </head>
 <body>
-	<form method="post" action="ReefEncounter.php">
+	<form method="post" action="HW7.php">
 		<input type="submit" name="addShrimp" value="Add Shrimp">
 		<input type="submit" name="resetBoard" value="Reset Board">
 		<input type="submit" name="saveGame" value = "Save Game">
@@ -17,9 +17,6 @@
 
 	<?php
 		session_start();
-		if (isset($_SESSION['saveGame'])){
-			ob_start();
-		}
 		
 		if (isset($_REQUEST['addShrimp']))
 			$_SESSION['action'] = "addShrimp";
@@ -228,14 +225,14 @@
 						if ($action == "addShrimp" && $this->canPlaceShrimp($i, $j)){
 							echo "
 		<span style='top:" . ($i * 40 + 27) . "px; left:" . ($j * 40 + 32) . "px; width:32px; height:32px; position:absolute; z-index:300;'>
-			<a href='ReefEncounter.php?b" . $this->id . $i . $j . "=" . SHRIMP_RED . "'  
+			<a href='HW7.php?b" . $this->id . $i . $j . "=" . SHRIMP_RED . "'  
 				style='text-decoration:none; text-align:center; display:block; vertical-align:middle; line-height:32px'>[+]</a>
 		</span>";
 						}
 		//						else if ($this->board[$i][$j]->isValid()) {								
 		//							echo "
 		//		<span style='top:" . ($i * 40 + 27) . "px; left:" . ($j * 40 + 32) . "px; width:32px; height:32px; position:absolute; z-index:200;'>
-		//			<a href='ReefEncounter.php?b" . $this->id . $i . $j . "=" . PTILE_YELLOW . "'  
+		//			<a href='HW7.php?b" . $this->id . $i . $j . "=" . PTILE_YELLOW . "'  
 		//				style='text-decoration:none; text-align:center; display:block; vertical-align:middle; line-height:32px'>[+]</a>
 		//		</span>";
 		//						}
@@ -379,12 +376,12 @@ fclose($fp);
 		//	print_r($_SESSION);
 	
 	if (isset($_REQUEST['saveGame'])){
-		$fp = fopen("./SavedGame7.txt", "w");		
+		$fp = fopen("./SavedGame7.txt", "w") or die("unable to open SavedGame7.txt");	
 		for ($i = 1; $i <= 2; $i++){
 			fwrite($fp, "board" . $i . "\n");
-			for ($j = 0; $j < count($_SESSION['board1']->board); $j++){
+			for ($j = 0; $j < count($_SESSION['board1']->board); $j++){				
 				for ($k = 0; $k < count($_SESSION['board1']->board[$j]); $k++){
-					$t = "b" . $i . $j . $k;
+					$t = "b" . $i . $j . $k;										
 					fwrite($fp, $_SESSION{"board" . $i}->board[$j][$k]->getShrimp() + $_SESSION{"board" . $i}->board[$j][$k]->getTile() . "\t");
 				}
 				fwrite($fp, "\n");
